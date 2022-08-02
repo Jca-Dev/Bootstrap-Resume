@@ -1,3 +1,19 @@
+<?php
+
+
+if($_POST["projectsummary"]) {
+
+
+mail("john.arscott@hotmail.com", "Employment Interest",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +49,7 @@
                                 <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
-                                <a href="contact.php" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
                                 <a href="assets/cv/jca-dev.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
@@ -51,14 +67,13 @@
                 <h5 class="uppercase text-center">Lets create something amazing!</h5>
 
                 <div class="center-form">
-                    <form action=”mailto:john.arscott@hotmail.com method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+                    <form method=”POST” action="contact.php">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
                         <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Enter vacancey information e.g job title, job description, salary, benifits and a little message." required></textarea>
                         <div class="form-row text-center">
                             <div class="col">
-                                <button type="submit" class="btn btn-secondary">Submit your interest</button>
-                                <a href="contact.html"><button type="submit" class="btn btn-secondary">Email</button></a>
+                                <button type="submit" class="btn btn-secondary">Send your interest</button>
                             </div>
                         </div>
                     </form>
