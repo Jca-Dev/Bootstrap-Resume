@@ -400,6 +400,43 @@ button[type="submit"] {
     color: #fafafa;
 }
 
+#status_success {
+    padding: 2em;
+    max-width: 40%;
+    display: none;
+    font-family: "Exo", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 50px auto;
+    color: white;
+    text-align: center;
+    background: #7bf97b;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    border-radius: 25px;
+}
+
+#status_failed {
+    padding: 2em;
+    max-width: 40%;
+    display: none;
+    font-family: "Exo", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 50px auto;
+    color: white;
+    text-align: center;
+    background: #ff0000;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    border-radius: 25px;
+}
+
+#load {
+    margin: 50px auto;
+    max-width: 0%;
+    display: none;
+    z-index: 0;
+}
+
 /*--------------------------------------------Map*/
 div#map {
     min-height: 360px;
