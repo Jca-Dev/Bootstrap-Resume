@@ -132,7 +132,7 @@ header {
     font-family: "Exo", sans-serif;
     font-weight: 100;
     font-size: 46px;
-    margin-top: 50px;
+    margin-top: 1vw;
     color: #ffffff;
 }
 
@@ -253,8 +253,8 @@ footer .cv-pdf i:hover {
 }
 
 #footer-details {
-    margin: 20px;
-}
+    margin: 20px 20px 0px 20px;
+  }
 
 /*--------------------------------------------Three Reasons*/
 
@@ -379,13 +379,22 @@ div#map {
 
 /*--------------------------------------------Contact*/
 
+.bkg {
+    background: white;
+}
+
 .contact-heading {
     font-family: "Exo", sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
+.frm {
+    max-width: 68.1%;
+    margin: auto;
+    background: #3498db;
+}
 
 .center-form {
     padding-top: 10px;
